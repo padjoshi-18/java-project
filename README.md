@@ -158,23 +158,6 @@ See [USAGE.md](USAGE.md) for detailed examples of commands and data file formats
 2. Open in Eclipse as a Java Project
 3. Run the `CCRMApplication` class
 
-## Java Architecture
-
-### JDK (Java Development Kit)
-- Complete development kit
-- Includes compiler (javac)
-- Contains JRE plus development tools
-
-### JRE (Java Runtime Environment)
-- Minimum requirement to run Java applications
-- Contains JVM and core libraries
-- End-user component
-
-### JVM (Java Virtual Machine)
-- Executes Java bytecode
-- Platform-independent
-- Memory management and security
-
 ## Assertions
 
 To enable assertions when running the application:
