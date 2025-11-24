@@ -80,20 +80,6 @@ javac -d target src/main/java/edu/ccrm/**/*.java
 java -ea -cp target edu.ccrm.CCRMApplication
 ```
 
-## Evolution of Java
-
-- 1995: Java 1.0 released by Sun Microsystems
-- 2000: Java 2 (J2SE 1.3) with HotSpot JVM
-- 2004: Java 5 introduces generics, annotations, autoboxing
-- 2006: Java SE 6 with major performance improvements
-- 2011: Java 7 adds try-with-resources, diamond operator
-- 2014: Java 8 introduces lambdas and Stream API
-- 2017: Java 9 introduces modules
-- 2018: Java 10 introduces var type inference
-- 2018: Java 11 LTS with HTTP Client API
-- 2021: Java 17 LTS with sealed classes
-- 2023: Java 21 LTS with virtual threads
-
 ## Java Editions Comparison
 
 | Feature | Java ME | Java SE | Java EE |
@@ -125,45 +111,6 @@ java -ea -cp target edu.ccrm.CCRMApplication
 - Platform-independent ("Write Once, Run Anywhere")
 - Memory management and security
 - Just-In-Time compilation for performance
-
-## Windows Installation Steps
-
-1. Download JDK
-   - Visit Oracle website or use OpenJDK
-   - Choose Windows x64 installer
-   - Run the installer
-
-2. Set Environment Variables
-   - Right-click Computer -> Properties -> Advanced System Settings
-   - Click Environment Variables
-   - Add JAVA_HOME: Path to JDK installation
-   - Add to Path: %JAVA_HOME%\bin
-
-3. Verify Installation
-```bash
-java -version
-javac -version
-```
-
-[Screenshots will be added showing these steps]
-
-## Eclipse Setup Steps
-
-1. Download Eclipse IDE
-   - Visit eclipse.org
-   - Download "Eclipse IDE for Java Developers"
-
-2. Install Eclipse
-   - Extract downloaded archive
-   - Run eclipse.exe
-
-3. Create Java Project
-   - File -> New -> Java Project
-   - Enter project name
-   - Select JDK version
-   - Click Finish
-
-[Screenshots will be added showing these steps]
 
 ## Feature Implementation Map
 
@@ -211,24 +158,6 @@ See [USAGE.md](USAGE.md) for detailed examples of commands and data file formats
 2. Open in Eclipse as a Java Project
 3. Run the `CCRMApplication` class
 
-## Evolution of Java
-
-- 1995: Java 1.0 released by Sun Microsystems
-- 2006: Java SE 6 with major performance improvements
-- 2014: Java 8 introduces lambdas and Stream API
-- 2017: Java 9 introduces modules
-- 2021: Java 17 LTS release
-- 2023: Java 21 LTS release
-
-## Java Editions Comparison
-
-| Feature | Java ME | Java SE | Java EE |
-|---------|---------|----------|----------|
-| Purpose | Mobile/Embedded | Standard Desktop | Enterprise Applications |
-| Scope | Limited APIs | Core Platform | Enterprise Features |
-| Platform | Resource-constrained | Desktop/Server | Large-scale Server |
-| Use Case | IoT, Mobile | Desktop Apps | Web Apps, Microservices |
-
 ## Java Architecture
 
 ### JDK (Java Development Kit)
@@ -245,27 +174,6 @@ See [USAGE.md](USAGE.md) for detailed examples of commands and data file formats
 - Executes Java bytecode
 - Platform-independent
 - Memory management and security
-
-## Windows Installation Steps
-
-[Screenshots will be added showing Java installation and verification]
-
-## Eclipse Setup Steps
-
-[Screenshots will be added showing Eclipse project creation and configuration]
-
-## Feature Implementation Map
-
-| Topic | Implementation Location |
-|-------|------------------------|
-| Inheritance | `edu.ccrm.domain.Person` |
-| Polymorphism | `edu.ccrm.service` interfaces |
-| Encapsulation | All domain classes |
-| Abstraction | `Person` abstract class |
-| Exception Handling | Custom exceptions in `edu.ccrm.util` |
-| File I/O | `edu.ccrm.io` package |
-| Stream API | Service implementations |
-| Design Patterns | `AppConfig` (Singleton), `Course.Builder` |
 
 ## Assertions
 
